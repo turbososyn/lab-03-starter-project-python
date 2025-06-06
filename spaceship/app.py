@@ -26,3 +26,8 @@ def make_app(settings: Settings) -> FastAPI:
         return 'build/index.html'
 
     return app
+
+settings = Settings()
+
+# Створюємо екземпляр FastAPI застосунку
+app = make_app(settings)
